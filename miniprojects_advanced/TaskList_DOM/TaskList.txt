@@ -1,0 +1,1 @@
+This mini project shows how we can use DOM Manipulation through different Events and also making the data persist to localStorage. 
