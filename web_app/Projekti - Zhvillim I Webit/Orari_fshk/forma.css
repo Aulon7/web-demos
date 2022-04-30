@@ -1,0 +1,98 @@
+.form-content {
+    width: 350px;
+    background: linear-gradient(90deg, rgba(212,211,211,1) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 10px;
+    padding: 80px 40px;
+    position: relative;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    box-shadow: -4px 14px 23px -6px rgb(46, 46, 46);
+    margin-top:80px;
+}
+
+.login {
+    height: 300px;
+}
+
+.register {
+    height: 430px;
+}
+
+.add {
+    height: 470px;
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+}
+
+.form-content p {
+    margin: 0px;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(2, 2, 2);
+    font-size: 17px;
+}
+
+.form-content input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-content input[type="text"], input[type="password"],input[type="number"] {    
+          background: transparent;
+          border: none;
+          border-bottom: 1.5px solid rgb(70, 70, 70);
+          outline: none;
+          height: 40px;
+          transition: 0.25s;
+          font-size: 15px;
+          color: rgb(10, 10, 10);
+          font-family: "Trebuchet MS", Helvetica, sans-serif; 
+          outline: none;
+ }
+
+ .form-content ::placeholder {
+     color: rgba(36, 36, 36, 0.795);
+     font-size: 14px;
+ }
+ 
+ .form-content input[type="submit"] {
+     border: 0;
+     outline: 0;
+     height: 40px;
+     color: rgb(29, 29, 29);
+     font-size: 16px;
+     font-weight: bold;
+	 background: rgb(255, 108, 41);
+     cursor: pointer;
+     border-radius: 20px;
+     margin-top: 23px;
+     transition: 0.2s;
+ }
+
+ .form-content input[type="submit"]:hover {
+       background: rgb(240, 95, 28);
+       box-shadow: -4px 14px 23px -6px rgb(46, 46, 46);
+ }
+
+ .form-content #p-login {
+     margin-top:10px;
+     font-size: 15px;
+     text-align: center;
+ }
+
+ .form-content #p-login a {
+     text-decoration: none;
+     padding-left: 3px;
+     color: rgb(6, 82, 182);
+ }
+
+.form-content p{
+    color: rgb(206, 28, 28);
+    font-size: 12px;
+    margin-top: -5px;
+}
