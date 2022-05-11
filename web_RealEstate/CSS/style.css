@@ -31,6 +31,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   scroll-behavior: smooth;
+ 
 }
 header {
   position: sticky;
@@ -67,12 +68,12 @@ a {
 .main-image {
   align-self: center;
   justify-self: center;
-  padding: 0 5rem;
 }
 .main-image img {
   border-radius: 200px 200px 15px 15px;
   box-shadow: 10px 10px 15px -5px rgb(146, 146, 146);
-  height: 550px;
+  width: 300px;
+  height: 500px;
   object-fit: cover;
   transition: 0.25s ease-in-out;
 }
@@ -96,7 +97,7 @@ a {
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0)
   );
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 /* .nav-filter is added through JavaScript to prevent scrolling while Hamburger Menu is Open */
@@ -157,11 +158,11 @@ a {
 #home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 2rem;
+  padding: 2rem;
 }
 #home .home-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: flex-start;
   padding: 0 5rem;
@@ -197,7 +198,7 @@ a {
 }
 #home .home-reviews {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 1.5rem 0;
 }
@@ -474,7 +475,7 @@ a {
   color: #fff;
   position: fixed;
   bottom: 16px;
-  right: 32px;
+  right: 35px;
   width: 50px;
   height: 50px;
   font-size: 32px;

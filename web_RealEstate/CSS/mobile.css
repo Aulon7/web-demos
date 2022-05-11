@@ -1,5 +1,5 @@
 /* MEDIA QUERIES FOR IPADS */
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   #navbar .main-logo {
     width: 80px;
     height: 60px;
@@ -50,7 +50,7 @@
 
   #home {
     grid-template-columns: 1fr;
-    margin: 1rem;
+    padding: 1rem;
   }
 
   #home .home-content {
@@ -59,24 +59,21 @@
     align-items: center;
     text-align: center;
   }
-
-  #home .home-image,
-  .main-image {
-    padding: 1.5rem 1.2rem;
+  #home .home-reviews {
     justify-content: center;
   }
-
-  #home .home-image img,
-  .main-image img {
-    height: 500px;
-  }
-
+  
   #residencies .residencies-header {
     margin-left: 0;
   }
   #logo {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    justify-items: center;
+  }
+
+  #logo .logo img {
+    width: 200px;
   }
 
   #value {
@@ -95,7 +92,8 @@
 }
 
 /* MEDIA QUERIES FOR SMARTPHONES  */
-@media screen and (max-width: 500px) {
+@media (min-width: 300px) and (max-width: 500px){
+  
   #nav-menu li {
     font-size: 1.2rem !important;
     transition: 0.3s ease-in-out;
@@ -105,16 +103,72 @@
     color: rgb(21, 21, 237);
   }
 
+  .main-image img {
+    width: 230px;
+    height: 400px;
+  }
+
+  #home,
+  #residencies,
+  #value,
+  #contact,
+  #footer {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  #home .home-content {
+    grid-template-columns: 1fr;
+  }
+
+  #home .form input {
+    width: 265px;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    border: 2px solid rgba(144, 144, 144, 0.848);
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+  }
+
+  #home .home-reviews h2 {
+    font-size: 1.5rem;
+  }
+
+  #home .home-reviews i {
+    font-size: 1rem;
+  }
+  #residencies .residencies-header {
+    margin-left: 20%;
+  }
+
+  #residencies .residencies-container {
+    width: 100%;
+  }
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
   #logo {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     justify-items: center;
   }
-
+  #value .value-header {
+  margin: 2rem 0;
+}
   #contact .cards-container {
-    grid-template-columns: 250px;
+    grid-template-columns: 1fr;
+    align-content: center;
   }
   #footer .footer-content {
     grid-template-columns: 1fr;
+  }
+
+  #footer .copyright {
+    font-size: 0.8rem;
+   
   }
 }
