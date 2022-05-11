@@ -1,0 +1,120 @@
+/* MEDIA QUERIES FOR IPADS */
+@media screen and (max-width: 900px) {
+  #navbar .main-logo {
+    width: 80px;
+    height: 60px;
+    margin-left: 2rem;
+  }
+  #hamburger {
+    display: block;
+  }
+
+  #hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  #nav-menu {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    flex-direction: column;
+    background: #fff;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0px -10px 15px -10px rgba(186, 186, 186, 1);
+  }
+
+  #nav-menu li {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  #navbar #nav-menu li a:hover {
+    color: rgb(21, 21, 237);
+  }
+
+  #nav-menu.active {
+    right: 0;
+  }
+
+  #home {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+
+  #home .home-content {
+    padding: 1.5rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #home .home-image,
+  .main-image {
+    padding: 1.5rem 1.2rem;
+    justify-content: center;
+  }
+
+  #home .home-image img,
+  .main-image img {
+    height: 500px;
+  }
+
+  #residencies .residencies-header {
+    margin-left: 0;
+  }
+  #logo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  #value {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+  }
+
+  #footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MEDIA QUERIES FOR SMARTPHONES  */
+@media screen and (max-width: 500px) {
+  #nav-menu li {
+    font-size: 1.2rem !important;
+    transition: 0.3s ease-in-out;
+  }
+
+  #navbar #nav-menu li a:hover {
+    color: rgb(21, 21, 237);
+  }
+
+  #logo {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  #contact .cards-container {
+    grid-template-columns: 250px;
+  }
+  #footer .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
