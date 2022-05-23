@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e2e2e2;
+}
+
+.wrapper {
+  width: 400px;
+  background: #f8f9fa;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.218);
+}
+.wrapper #header {
+  display: flex;
+  font-size: 21px;
+  font-weight: 500;
+  color: #343a40;
+  padding: 16px 15px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+#header i {
+  font-size: 0em;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.wrapper.active #header i {
+  margin-left: 5px;
+  font-size: 25px;
+}
+.wrapper .input__part {
+  margin: 20px 25px 30px;
+}
+.wrapper.active .input__part {
+  display: none;
+}
+.input__part .info__txt {
+  display: none;
+  font-size: 17px;
+  text-align: center;
+  padding: 12px 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.input__part .info__txt.error {
+  color: #721c24;
+  display: block;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.input__part .info__txt.pending {
+  color: #0c5460;
+  display: block;
+  background: #d1ecf1;
+  border: 1px solid #bee5eb;
+}
+.input__part input,
+.input__part button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 7px;
+}
+.input__part input {
+  text-align: center;
+  padding: 0 15px;
+  border: 1px solid #ccc;
+}
+.input__part input:focus,
+.input__part input:valid {
+  border: 2px solid #343a40;
+}
+.input__part input::placeholder {
+  color: #bfbfbf;
+}
+.input__part .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.separator::before {
+  content: "or";
+  color: #b3b3b3;
+  font-size: 19px;
+  padding: 0 15px;
+  background: #f8f9fa;
+}
+.input__part button {
+  color: #fff;
+  cursor: pointer;
+  background: #2574f2;
+  transition: 0.15s all ease-in-out;
+}
+.input__part button:hover {
+  background: #0c58d1;
+}
+
+.wrapper .weather__part {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper.active .weather__part {
+  display: flex;
+}
+.weather__part img {
+  width: 125px;
+}
+.weather__part .temp {
+  display: flex;
+  font-weight: 500;
+  font-size: 65px;
+}
+.weather__part .temp .numb {
+  font-weight: 600;
+}
+.weather__part .temp .deg {
+  font-size: 30px;
+  display: block;
+  margin: 10px 5px 0 0;
+}
+.weather__part .weather {
+  font-size: 17px;
+  color: rgba(34, 34, 34, 0.55);
+  text-align: center;
+  margin: 0 15px 15px;
+}
+.weather__part .location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.location i {
+  font-size: 22px;
+  margin: 4px 5px 0 0;
+}
+.weather__part .bottom__details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+.bottom__details .column {
+  display: flex;
+  width: 100%;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: center;
+}
+.column i {
+  color: #5dbbff;
+  font-size: 35px;
+  margin-right: 5px;
+}
+.column.humidity {
+  border-left: 1px solid #ccc;
+}
+.column .details {
+  margin-left: 3px;
+}
+.details .temp,
+.humidity span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.details .temp .deg {
+  margin: 0;
+  font-size: 17px;
+  padding: 0 2px 0 1px;
+}
+.column .details p {
+  font-size: 14px;
+  color: rgba(34, 34, 34, 0.55);
+}
